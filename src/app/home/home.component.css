@@ -1,0 +1,254 @@
+*
+{
+    box-sizing: border-box;
+}
+/* --------------------------------------------------------------navBar-------------------------------- */
+.item-l button
+{
+    border: white;
+    color: black;
+    font-size: 10px !important;
+    text-shadow: none;
+    padding: 0px 7px;
+    margin: 7px;
+}
+.item-r button
+{
+    border: white;
+    color: black;
+    font-size: 11px;
+    text-shadow: none;
+    padding: 6px 8px;
+    margin: 7px;
+}
+.item-r
+{
+    margin-right: auto;
+}
+.menu
+{
+    font-size: 13px;
+    
+}
+.menu:hover,.menu a
+{
+    background-color: rgb(218, 213, 213);
+    
+}
+.logout
+{
+    background-color: rgb(219, 67, 67);
+}
+button:hover
+{
+    background-color: rgb(218, 213, 213);
+}
+.logout:hover
+{
+    background-color: rgb(219, 67, 67) !important;
+}
+.btn-1:hover
+{
+    background-color: rgb(32, 30, 30,.7);
+    color: white;
+}
+.btn-2:hover
+{
+    background-color: rgb(32, 30, 30,.7);
+    color: white;
+}
+.p-data:hover
+{
+    background-color:rgba(32, 30, 30, 0.2) ;
+    color: white;
+    cursor: pointer;
+}
+.input-group input:focus
+{
+    box-shadow: none;
+    
+}
+
+
+/* ------------------------------------------------------------------------------------ */
+.all
+{
+    height: auto;
+}
+.sec-l
+{
+    background-color: white !important;
+    height: 88vh;
+    
+}
+.sec-l table th,.sec-l table td
+{
+    font-size: 11px !important;
+}
+
+.t-data
+{
+    width: 100%;
+    display:block;
+}
+/*.t-data thead
+{
+    
+    width: 100%;
+    height: 20px;
+} */
+.t-data tbody 
+{
+    height: 200px;
+    display: inline-block;
+    width: 100%;
+    overflow: auto;
+    
+}
+
+.tb-data button
+{
+    background-color: white;
+    box-shadow: none;
+    border:1px solid rgb(207, 203, 203,.7) ;
+}
+.tb-data button:hover
+{
+    background-color: rgb(218, 213, 213,.6);
+    box-shadow: none;
+    border:1px solid transparent ;
+}
+
+
+.dropdown button
+{
+    font-size: 11px;
+    border: black;
+    padding: 2px 15px;
+
+}
+.dropdown button:hover
+{
+    background-color: rgb(218, 213, 213,.6);
+}
+.dropdown input:focus
+{
+    box-shadow: none;
+    border: 1px solid rgb(151, 151, 158,.6);
+
+}
+.dropdown button:focus
+{
+    box-shadow: none;
+    border: transparent;
+}
+.table
+{
+    font-size: 14px;
+}
+i
+{
+    cursor: pointer;
+}
+.btn-cart button
+{
+    padding: 2px 17px;
+    background-color: white;
+    box-shadow: none;
+    font-size: 19px;
+    border: 1px solid rgb(207, 203, 203,.7);
+}
+.btn-cart
+{
+    padding-top: 10px;
+}
+.btn-cart button:hover
+{
+    
+    background-color: rgb(218, 213, 213,.6);
+    box-shadow: none;
+    border: 1px solid transparent;
+}
+
+.sec-r
+{
+    background-color: white !important;
+    height: 88vh;
+}
+.sec-r ::placeholder
+{
+    font-size: 13px;
+}
+.sec-r input:focus
+{
+    box-shadow: none;
+    border: 1px solid rgb(168, 164, 164,.6);
+}
+.sec-r-btn button
+{
+    font-size: 17px;
+    background-color: white;
+    box-shadow: none;
+    border: 1px solid rgb(194, 189, 189,.7);
+    padding: 4px 32px;
+}
+.sec-r-btn button:hover
+{
+    
+    background-color: rgb(218, 213, 213,.6);
+    border: 1px solid rgb(194, 189, 189,.7);
+    box-shadow: none;
+    
+    
+    
+}
+
+#product-input.ng-valid
+{
+   border-left: 5px solid green;
+}
+#product-input.ng-invalid
+{
+    border-left: 5px solid red;
+}
+#price-input.ng-valid
+{
+   border-left: 5px solid green;
+}
+#price-input.ng-invalid
+{
+    border-left: 5px solid red;
+}
+#quantity-input.ng-valid
+{
+   border-left: 5px solid green;
+}
+#quantity-input.ng-invalid
+{
+    border-left: 5px solid red;
+}
+
+.mod-1:hover
+{
+    background-color: rgba(19, 20, 20, 0.7) !important;
+    color: white !important;
+}
+
+
+.imgs
+{
+    height: 400px;
+    display: inline-block;
+    width: 100%;
+    overflow: auto;
+}
+
+
+/* #product.ng-valid
+{
+   border-left: 5px solid green;
+}
+#product.ng-invalid
+{
+    border-left: 5px solid red;
+} */

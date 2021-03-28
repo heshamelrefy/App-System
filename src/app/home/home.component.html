@@ -1,0 +1,488 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+          
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="item-l navbar-nav mr-auto">
+      <button><i class="fa fa-home" aria-hidden="true"></i> Dashboard</button>
+      <button data-toggle="modal" data-target="#Hold"><i class="fa fa-history"></i> Hold</button>
+      <button (click)="shippingHoldTakeAway()"><i class="fa fa-shopping-bag"></i> Take Away</button>
+      <button (click)="shippingHoldDelivary()"><i class="fa fa-truck"></i> Delivery</button>
+      <button data-toggle="modal" data-target="#DineIn"><i class="fa fa-table"></i> Dine in</button>
+         <button  class="nav-item dropdown">
+        <button class=" dropdown-toggle shadow-none text-dark"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         <i class="fa fa-wrench"></i> Options
+        </button>
+        
+        <div class="dropdown-menu menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item"  >Merge Order</a>
+          <a class="dropdown-item" >Split Order</a>
+        
+        </div>
+         </button> 
+      
+
+</div>
+
+    <div class="item-r navbar-nav ">
+     
+      
+        <button ><i class="fa fa-window-maximize " ></i></button>
+      
+      
+        <button ><i class="fa fa-calculator"></i> Calculator</button>
+      
+      
+        <button class="logout"><i class="fa fa-sign-out"></i> Logout</button>
+      
+      
+        <button ><i class="fa fa-user"></i> Waiter Screen</button>
+      
+      
+        <button ><i class="fa fa-check"></i> Ready Orders</button>
+      
+   
+     
+    </div>
+   
+  </div>
+</nav> 
+
+
+  <!---------------- ---------------------------------------------------- Modal Hold----------------------------- -->
+
+
+
+
+<!-- Modal -->
+<div  class="modal fade " id="Hold" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div  class="modal-dialog modal-xl">
+  <div   class="modal-content">
+    <div class="modal-header">
+      <h5 style="font-size: 13px ;" class="modal-title" id="exampleModalLabel">Orders history</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div style="font-size: 13px;padding: 0;margin: 0;" class="modal-body">
+      <div class="row">
+        <div class="col-md-2">
+        <div class="row">
+          <div class="col-md-12 ">
+            <button class="btn-1" style="padding: 10px 98% 10px 2px; box-shadow: none;border: .5px solid rgb(187, 184, 184,.6);">Hold</button>
+            
+          </div>
+          <div class="col-md-12">
+            <button class="btn-2" style="padding: 10px 76% 10px 2px;box-shadow: none;border: .5px solid rgb(187, 184, 184,.6);">Incomplete</button>
+          </div>
+        </div>
+        </div>
+        <div style="height: 100%;width: 2px; background-color: brown;margin: 0px 10px;"></div>
+
+
+        <div class="col-md-3">
+          <div>
+            <div class="input-group mb-1" >
+              <span style="font-size: 12px !important;" class="input-group-text">Search</span>
+              <input style="box-shadow: none;" type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+              <button style="font-size: 12px !important;" class="input-group-text"><i class="fa fa-search"></i></button>
+              <button style="font-size: 12px !important;" class="input-group-text"><i class="fa fa-remove"></i></button>
+            </div>
+          </div>
+          <div style="width: 100%;background-color: rgb(187, 184, 184,.6);">
+            <p class="lead p-data" style="padding: 8px 8px;font-size: 13px;">take a way</p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-12 text-center my-3">
+              <h3>Order Details</h3>
+            </div>
+            <div class="col-md-4">
+              Autor :
+            </div>
+            <div class="col-md-2">
+              Hesham
+            </div>
+            <div class="col-md-2">
+              Date :
+            </div>
+            <div class="col-md-4">
+              2021-03-22 15:33:16
+            </div>
+
+            <div class="col-md-4">
+              Customer  :
+            </div>
+            <div class="col-md-2">
+              mustafa
+            </div>
+            <div class="col-md-2">
+              Code  :
+            </div>
+            <div class="col-md-4">
+              ERYK74
+            </div>
+
+            <div class="col-md-4">
+              Amount due  :
+            </div>
+            <div class="col-md-8">
+              100 $
+            </div>
+           <div class="row">
+             <div class="col-md-12 text-center my-3">
+               <h3>Product list</h3>
+             </div>
+             <div class="col-md-12">
+              <table  class="table  table-bordered  ">
+                <thead>
+                  <tr style="background-color: rgb(160, 156, 156,.3);">
+                    <th  scope="col">Item Name</th>
+                    <th class=" text-center" scope="col">Unit Price</th>
+                    <th class=" text-center" scope="col">Quantity</th>
+                    <th class=" text-center" scope="col">Discount</th>
+                    <th class=" text-center" scope="col">Sub Total</th>
+                  </tr>
+                </thead>
+                <tbody  >
+                  <tr class=" text-center">
+                    <td>Pizza</td>
+                    <td>2</td>
+                    <td>50 $</td>
+                    <td>0 $</td>
+                    <td>100$</td>
+                    
+                  </tr>
+
+                  <tr class=" text-center">
+                    <td>Pizza</td>
+                    <td>2</td>
+                    <td>50 $</td>
+                    <td>0 $</td>
+                    <td>100$</td>
+                    
+                  </tr>
+                  <tr class=" text-center">
+                    <td>Pizza</td>
+                    <td>2</td>
+                    <td>50 $</td>
+                    <td>0 $</td>
+                    <td>100$</td>
+                    
+                  </tr>
+                  
+                  
+             
+                </tbody>
+                
+                
+              </table>
+             </div>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div  class="modal-footer">
+      <button style="font-size: 13px;" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      <button style="font-size: 13px;" type="button" class="btn btn-primary">Edit the Order</button>
+    </div>
+  </div>
+</div>
+</div>
+<!-- ------------------------------------------------------------------------------------------------------------ -->
+
+<!-- ----------------------------------------------------- Dine in ----------------------------------------- -->
+<!-- Button trigger modal -->
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="DineIn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-xl">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      ...
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      <button type="button" class="btn btn-primary">Save changes</button>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- -------------------------------------------------- Sections------------------------------------------------------ -->
+
+
+
+<section class="mt-1 all" >
+    <div class="container-fluid">
+      <div class="row ">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="sec-l ">
+            
+            <div class="dropdown mb-2 " style="background-color: rgb(194, 189, 189,.4);width: 96%;margin: auto;">
+    
+    
+            
+              
+              <div class="dropdown ">
+                <button class="btn dropdown-toggle  border-gray" style="width: 40%;" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  User Name 
+                </button>
+                <button  ><i class="fa fa-user"></i> Add a customer</button>
+                <button><i class="fa fa-pencil" aria-hidden="true"></i> Note</button>
+                <button><i class="fa fa-truck"></i> Shipping</button>
+                <button data-toggle="modal" data-target="#AddItem"><i class="fa fa-plus"></i> Item</button>
+                <div class="dropdown-menu " style="width: 40%;" aria-labelledby="dropdownMenu2">
+                  
+                  <input type="text" class=" form-control">
+                  <button class="dropdown-item" type="button" >User Name</button>
+                </div>
+              </div>           
+              
+             
+            </div>
+            <table  class="table t-data table-borderless  col-sm-12">
+              <thead>
+                <tr style="background-color: rgb(187, 184, 184,.2);">
+                  <th style="width: 59%;"  scope="col">Items</th>
+                  <th class=" text-center" scope="col">Unit Price</th>
+                  <th class=" text-center" scope="col">Quantity</th>
+                  <th class=" text-center" scope="col">Total Price</th>
+                </tr>
+              </thead>
+              <tbody  class="tb-data" id="cart-data">
+              
+            
+           
+              </tbody>
+               <!-- <p *ngIf="quant < 1" class="pr-3 " style="color: rgb(31, 28, 28);">Not Item Yet</p>  -->
+              
+            </table>
+        
+            
+            <table style="background-color: #f5f5f5;" class="table table-borderless  col-sm-12" >
+                <thead>
+                  <tr>
+                    <th style="width: 65%;" scope="col">Products count ( {{x}} )</th>
+                    <th scope="col">Sub Total</th>
+                    <th scope="col">{{prices}}</th>
+                    
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row"></th>
+                    
+                    <td>Discount on Cart</td>
+                    <td>0 $</td>
+                  </tr>
+                  <tr *ngIf="shipCondition">
+                    <th scope="row"></th>
+                    
+                    <td>Shipping</td>
+                    <td>{{prices}}</td>
+                  </tr>
+                  <tr style="background-color: rgb(170, 187, 218,.333);">
+                    <th scope="row"></th>
+                    
+                    <td>Net Payable	</td>
+                    <td>{{prices}}</td>
+                  </tr>
+                  
+              
+                </tbody>
+              </table>
+
+
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="btn-cart">
+                          <button><i class="fa fa-money" aria-hidden="true"></i> pay</button>
+                          <button><i class="fa fa-cutlery"></i> To Kitchen</button>
+                          <button><i class="fa fa-hand-stop-o" aria-hidden="true"></i> Hold</button>
+                          <button><i class="fa fa-gift"></i> Discount</button>
+                          <button><i class="fa fa-refresh" aria-hidden="true"></i> Cancel</button>
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-6">
+          <div class="sec-r">
+            <div style="width: 97%;margin: auto; " class="input-group py-3">
+                <div class="input-group-prepend" style="height: 28px;">
+                  <span class="input-group-text" id="basic-addon1"><i class="fa fa-search" aria-hidden="true"></i></span>
+                  <span class="input-group-text" id="basic-addon1"><i class="fa fa-barcode" aria-hidden="true"></i></span>
+                </div>
+                <input [(ngModel)]="searchText" autocomplete="off" style="height: 28px;"  type="text" class="form-control" placeholder="Barcode, SKU, product name or category ..."  >
+              </div>
+              <!-- id="searchInput" (keyup)="searchProducts()" -->
+
+              <div class="sec-r-btn">
+                <button><i class="fa fa-eye" style="font-size: 20px; "></i></button>
+                <button><i class="fa fa-arrow-left" style="font-size: 20px;"></i></button>
+                <button>Pizza</button>
+                <button>salat</button>
+                <button>seafood</button>
+                <button><i class="fa fa-arrow-right" style="font-size: 20px;"></i></button>
+
+              </div>
+              <div class="imgs">
+                <div class="row">
+                  <div *ngFor="let data of allData  | filter:searchText" (click)="show(data.DESIGN , data.PRIX_DE_VENTE)" style="width: 100%;" class=" col-md-3 ">
+                    <div style="cursor: pointer;background-color: rgb(165, 157, 157,.4);border: .5px solid rgb(206, 202, 202);color: black;" class="text-center mod-1" data-toggle="modal" data-target="#Modifuy">
+                      <img style="max-width: 100%;max-height:300px ;" src="https://bahia2.mblearn.com/public/modules/nexo//images/default.png" alt=""><br>
+                    <p style="font-size: 14px;">{{data.DESIGN}} </p>
+                    <p style="font-size: 14px;">{{data.PRIX_DE_VENTE}} $</p>
+                    </div>
+                  </div>
+              
+                </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    </div>
+    </section>
+
+
+    <!-- ------------------------------------------- add Item-------------------------------------------------- -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="AddItem" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add Product</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="addItem" (ngSubmit)="addItem.valid ">
+          <div class="form-group">
+            <label >Item Name</label>
+            <input [class.is-valid]="addItem.get('product').status=='VALID'" id="product-input" type="text" formControlName="product" class="form-control "  >
+            <div  style="font-size: 13px;"  *ngIf="addItem.get('product').errors==null&&addItem.get('product').touched==true"  >Add the product name.</div>
+            <div style="color: red;" *ngIf="addItem.get('product').errors && addItem.get('product').touched"  class="error"  >String is too short (1 chars), minimum 3</div>
+             <div style="font-size: 13px;" *ngIf="addItem.get('product').touched==false"   >Add the product name.</div> 
+          </div>
+          <div class="form-group">
+            <label >Unit Price</label>
+            <input [class.is-valid]="addItem.get('price').status=='VALID'" id="price-input" type="number" formControlName="price" class="form-control "  >
+            <div  style="font-size: 13px;"  *ngIf="addItem.get('price').errors==null&&addItem.get('price').touched==true"  >Please define the unit selling price of the product.</div>
+            <div style="font-size: 13px;color: red;" *ngIf="addItem.get('price').errors && addItem.get('price').touched"  class="error"  >Required</div>
+             <div style="font-size: 13px;" *ngIf="addItem.get('price').touched==false"   >Please define the unit selling price of the product.</div> 
+          </div>
+          <div class="form-group">
+            <label >Quantity</label>
+            <input [class.is-valid]="addItem.get('quantity').status=='VALID'" id="quantity-input" type="number" formControlName="quantity" class="form-control "  >
+            <div  style="font-size: 13px;"  *ngIf="addItem.get('quantity').errors==null&&addItem.get('quantity').touched==true"  >Please define the quantity you wish to add.</div>
+            <div style="font-size: 13px;color: red;" *ngIf="addItem.get('quantity').errors && addItem.get('quantity').touched"  class="error"  >Required</div>
+             <div style="font-size: 13px;" *ngIf="addItem.get('quantity').touched==false"   >Please define the quantity you wish to add.</div> 
+          </div>
+          
+        </form>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        <button  type="submit" class="btn btn-success" (click)="FormData()">Add Product</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- ------------------------------------------------Modifuy-------------------------------------------------- -->
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="Modifuy" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Choose a modifier for : اضافات</h5>
+        <button (click)="changing()" type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="imgs">
+          <div class="row">
+            <div [class.bg-secondary]="onchangeOne" (click)="changeOne();getModifuyGbna()"  id="modi1" style="max-height: 300px;border: .5px solid rgb(206, 202, 202);color: black;position: relative;left: 3%;" class="your-active mod col-md-3">
+              <div  style="cursor: pointer;" class="text-center " >
+                <img style="max-width: 100%;max-height:300px ;" src="https://bahia2.mblearn.com/public/modules/nexo//images/default.png" alt=""><br>
+              <p id="itmOne" >جبنه <br>
+                <br>
+                $10 
+              </p>
+              
+              <!-- ---------- -->
+              </div>
+            </div>
+            <div  [class.bg-secondary]="onchangeTwo" (click)="changeTwo();getModifuyKatshab()" id="modi2" style="max-height: 300px;border: .5px solid rgb(206, 202, 202);color: black;position: relative;left: 3%;" class="your-active col-md-3">
+              <div  style="cursor: pointer;" class=" text-center ">
+                <img style="max-width: 100%;max-height:300px ;" src="https://bahia2.mblearn.com/public/modules/nexo//images/default.png" alt=""><br>
+              <p id="itmTwo">كاتشب<br>
+                <br>
+
+                $0
+              </p>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button (click)="changing()" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button (click)="showAll()" type="button" class="btn btn-success">Add Modifier</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- ---------------------------------------------Note-------------------------------------------------------- -->
+    
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Note</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <textarea style="width: 100%;height: 200px;" name="" id="" cols="30" rows="10"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>   
+            

@@ -1,0 +1,225 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+  
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+            
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="item-l navbar-nav mr-auto">
+        <button><i class="fa fa-home" aria-hidden="true"></i> Dashboard</button>
+        <button data-toggle="modal" data-target="#Hold"><i class="fa fa-history"></i> Hold</button>
+        <button><i class="fa fa-shopping-bag"></i> Take Away</button>
+        <button><i class="fa fa-truck"></i> Delivery</button>
+        <button data-toggle="modal" data-target="#DineIn"><i class="fa fa-table"></i> Dine in</button>
+           <button  class="nav-item dropdown">
+          <button class=" dropdown-toggle shadow-none text-dark"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           <i class="fa fa-wrench"></i> Options
+          </button>
+          
+          <div class="dropdown-menu menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item"  >Merge Order</a>
+            <a class="dropdown-item" >Split Order</a>
+          
+          </div>
+           </button> 
+        
+ 
+</div>
+  
+      <div class="item-r navbar-nav ">
+       
+        
+          <button ><i class="fa fa-window-maximize " ></i></button>
+        
+        
+          <button ><i class="fa fa-calculator"></i> Calculator</button>
+        
+        
+          <button class="logout"><i class="fa fa-sign-out"></i> Logout</button>
+        
+        
+          <button ><i class="fa fa-user"></i> Waiter Screen</button>
+        
+        
+          <button ><i class="fa fa-check"></i> Ready Orders</button>
+        
+     
+       
+      </div>
+     
+    </div>
+  </nav> 
+
+
+    <!---------------- ---------------------------------------------------- Modal Hold----------------------------- -->
+
+
+
+
+<!-- Modal -->
+<div  class="modal fade " id="Hold" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div  class="modal-dialog modal-xl">
+    <div   class="modal-content">
+      <div class="modal-header">
+        <h5 style="font-size: 13px ;" class="modal-title" id="exampleModalLabel">Orders history</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div style="font-size: 13px;padding: 0;margin: 0;" class="modal-body">
+        <div class="row">
+          <div class="col-md-2">
+          <div class="row">
+            <div class="col-md-12 ">
+              <button class="btn-1" style="padding: 10px 98% 10px 2px; box-shadow: none;border: .5px solid rgb(187, 184, 184,.6);">Hold</button>
+              
+            </div>
+            <div class="col-md-12">
+              <button class="btn-2" style="padding: 10px 76% 10px 2px;box-shadow: none;border: .5px solid rgb(187, 184, 184,.6);">Incomplete</button>
+            </div>
+          </div>
+          </div>
+          <div style="height: 100%;width: 2px; background-color: brown;margin: 0px 10px;"></div>
+
+
+          <div class="col-md-3">
+            <div>
+              <div class="input-group mb-1" >
+                <span style="font-size: 12px !important;" class="input-group-text">Search</span>
+                <input style="box-shadow: none;" type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <button style="font-size: 12px !important;" class="input-group-text"><i class="fa fa-search"></i></button>
+                <button style="font-size: 12px !important;" class="input-group-text"><i class="fa fa-remove"></i></button>
+              </div>
+            </div>
+            <div style="width: 100%;background-color: rgb(187, 184, 184,.6);">
+              <p class="lead p-data" style="padding: 8px 8px;font-size: 13px;">take a way</p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-12 text-center my-3">
+                <h3>Order Details</h3>
+              </div>
+              <div class="col-md-4">
+                Autor :
+              </div>
+              <div class="col-md-2">
+                Hesham
+              </div>
+              <div class="col-md-2">
+                Date :
+              </div>
+              <div class="col-md-4">
+                2021-03-22 15:33:16
+              </div>
+
+              <div class="col-md-4">
+                Customer  :
+              </div>
+              <div class="col-md-2">
+                mustafa
+              </div>
+              <div class="col-md-2">
+                Code  :
+              </div>
+              <div class="col-md-4">
+                ERYK74
+              </div>
+
+              <div class="col-md-4">
+                Amount due  :
+              </div>
+              <div class="col-md-8">
+                100 $
+              </div>
+             <div class="row">
+               <div class="col-md-12 text-center my-3">
+                 <h3>Product list</h3>
+               </div>
+               <div class="col-md-12">
+                <table  class="table t-data table-bordered  ">
+                  <thead>
+                    <tr style="background-color: rgb(160, 156, 156,.3);">
+                      <th  scope="col">Item Name</th>
+                      <th class=" text-center" scope="col">Unit Price</th>
+                      <th class=" text-center" scope="col">Quantity</th>
+                      <th class=" text-center" scope="col">Discount</th>
+                      <th class=" text-center" scope="col">Sub Total</th>
+                    </tr>
+                  </thead>
+                  <tbody  >
+                    <tr class=" text-center">
+                      <td>Pizza</td>
+                      <td>2</td>
+                      <td>50 $</td>
+                      <td>0 $</td>
+                      <td>100$</td>
+                      
+                    </tr>
+
+                    <tr class=" text-center">
+                      <td>Pizza</td>
+                      <td>2</td>
+                      <td>50 $</td>
+                      <td>0 $</td>
+                      <td>100$</td>
+                      
+                    </tr>
+                    <tr class=" text-center">
+                      <td>Pizza</td>
+                      <td>2</td>
+                      <td>50 $</td>
+                      <td>0 $</td>
+                      <td>100$</td>
+                      
+                    </tr>
+                    
+                    
+               
+                  </tbody>
+                  
+                  
+                </table>
+               </div>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div  class="modal-footer">
+        <button style="font-size: 13px;" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button style="font-size: 13px;" type="button" class="btn btn-primary">Edit the Order</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ------------------------------------------------------------------------------------------------------------ -->
+
+<!-- ----------------------------------------------------- Dine in ----------------------------------------- -->
+<!-- Button trigger modal -->
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="DineIn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- -------------------------------------------------------------------------------------------------------- -->
